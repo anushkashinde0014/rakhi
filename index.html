@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Happy Raksha Bandhan</title>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Happy Raksha Bandhan</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+   <style>
+:root {
+    color-scheme: light;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fffafa;
+}
+
+main {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 5vw, 4rem) 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.intro {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+}
+
+.rakhi {
+    display: block;
+    width: min(250px, 75vw);
+    height: auto;
+    margin: 1.5rem auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    min-height: 170px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.love {
+    background: #ffe6f0;
+}
+
+.bond {
+    background: #e6f7ff;
+}
+
+.promise {
+    background: #fff4e6;
+}
+
+.fa-heart {
+    color: darkred;
+}
+
+.closing {
+    color: #d63384;
+    margin-top: 2rem;
+}
+   </style>
 </head>
 <body>
-    <div align="center">
-        <h1>Happy Raksha Bandhan </h1>
-        <p> to the world you are my brother,
-            <br> but to me you are my hero.</p>
-        <img src="rakhi.png" width="250">    
-        <br><br>
-        <table border="0" cellpadding="10">
-            <tr>
-                <td bgcolor="#ffe6f0" width ="200">
-                    <h2> love </h2>
-                    <p> a bond of trust 
-                    <br> forever.</p>
-                </td>
-                <td bgcolor="#e6f7ff" width="200">
-                    <h2> Bond</h2>
-                    <p> A bond of trust
-                        <br> and care.</p>
-                </td>
-                <td bgcolor="#fff4e6" width="200">
-                    <h2> Promise </h2>
-                    <p> Always there
-                        <br> for each other.</p>
-                </td>
-            </tr>
-        </table>
-        <br>
-<h3 style="color:#d63384;"> Love you Bhai!</h3>   
-</div>     
+   <main>
+<h1>Happy Raksha Bandhan <i class="fa-solid fa-heart"></i>
+</h1>
+<p class="intro"> To the world you are my brother,
+    <br> but to me you are my HERO.&#129782;</p>
+
+<img class="rakhi" src="rakhi.png" alt="Raksha Bandhan rakhi">
+
+<section class="cards" aria-label="Raksha Bandhan messages">
+    <article class="card love">
+        <h2> love <i class="fa-solid fa-heart"></i> </h2>
+        <p> a bond of trust
+            <br> forever.</p>
+    </article>
+    <article class="card bond">
+        <h2> Bond &#129730;</h2>
+        <p> A bond of love
+                <br> and care.</p>
+    </article>
+    <article class="card promise">
+        <h2> Promise &#129309; </h2>
+        <p> Always there
+                <br> for each other.</p>
+    </article>
+    <article class="card love">
+        <h2> Luck &#x1f9ff;</h2>
+        <p> lucky to have a brother<br> like you.<br>
+            forever my protector,<br> forever my best friend</p>
+    </article>
+</section>
+<h3 class="closing">Love you Bhai! &#x2764;</h3>
+   </main>
 </body>
 </html>
